@@ -11,12 +11,14 @@ import NotePage from './pages/NotePage'
 function App() {
   return (
     <Router>
-      <div className="App">
-        {/* You always have to return a single div, there 
-        can be nested divs, but there can only be a father */}
-        <Header />
-        <Route path='/' exact component={NotesListPage} />
-        <Route path='/note/:id' component={NotePage} />
+      <div className="container dark">
+        <div className='app'>
+          {/* You always have to return a single div, there 
+          can be nested divs, but there can only be a father */}
+          <Header />
+          <Route path='/' exact component={NotesListPage} />
+          <Route path='/note/:id' component={NotePage} />
+        </div>
       </div>
     </Router>
   );
